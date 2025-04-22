@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    outline: none;
+}
+
+/* Navigation */
+.navigation {
+    background-color: #004085;
+    color: #fff;
+    padding: 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-link:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+}
+
+/* Main Content */
+.main-content {
+    padding: 2rem;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #004085;
+}
+
+/* Sections */
+.section-heading {
+    font-size: 1.5rem;
+    color: #004085;
+    margin-bottom: 1rem;
+}
+
+.section-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Projects Section */
+.projects-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-item {
+    margin-bottom: 0.5rem;
+}
+
+.project-link {
+    font-weight: bold;
+}
+
+.project-link:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 3px #007BFF;
+}
+
+.form-button {
+    background-color: #004085;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-button:hover, .form-button:focus {
+    background-color: #003366;
+    outline: none;
+}
+
+/* Commands Section */
+.commands-list {
+    list-style: none;
+    padding: 0;
+}
+
+.command-item {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #004085;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 0.9rem;
+}

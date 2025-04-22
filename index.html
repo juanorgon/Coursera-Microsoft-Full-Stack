@@ -4,8 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav class="navigation" role="navigation">
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about-me">About</a></li>
+        </ul>
+    </nav>
+    <main class="main-content" role="main">
+        <h1 class="main-heading" id="home">Basic Git Commands</h1>  
+        <section class="about-section" id="about-me" role="region" aria-labelledby="about-me-heading">
+            <h2 class="section-heading" id="about-me-heading">About Me</h2>
+            <p class="section-text">Hello! I'm a developer passionate about version control systems and collaborative coding. I enjoy sharing knowledge and helping others learn Git.</p>
+        </section>
+
+        <section class="projects-section" id="projects" role="region" aria-labelledby="projects-heading">
+            <h2 class="section-heading" id="projects-heading">Projects</h2>
+            <ul class="projects-list">
+                <li class="project-item"><a class="project-link" href="https://github.com/example/project1" target="_blank">Project 1</a> - A tool for automating tasks.</li>
+                <li class="project-item"><a class="project-link" href="https://github.com/example/project2" target="_blank">Project 2</a> - A web application for tracking progress.</li>
+                <li class="project-item"><a class="project-link" href="https://github.com/example/project3" target="_blank">Project 3</a> - A library for data processing.</li>
+            </ul>
+        </section>
+
+        <section class="contact-section" id="contact" role="form" aria-labelledby="contact-heading">
+            <h2 class="section-heading" id="contact-heading">Contact Me</h2>
+            <form class="contact-form" action="https://example.com/submit-form" method="post">
+                <label class="form-label" for="name">Name:</label>
+                <input class="form-input" type="text" id="name" name="name" required>
+                
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input" type="email" id="email" name="email" required>
+                
+                <label class="form-label" for="message">Message:</label>
+                <textarea class="form-textarea" id="message" name="message" rows="4" required></textarea>
+                
+                <button class="form-button" type="submit">Send</button>
+            </form>
+        </section>
+
+        <section class="commands-section" role="region" aria-labelledby="commands-heading">
+            <h1 class="section-heading" id="commands-heading">Basic Git Commands</h1>    
+            <ul class="commands-list">
+                <li class="command-item"><strong>git init</strong> - Initialize a new Git repository.</li>
+                <li class="command-item"><strong>git clone [url]</strong> - Clone a repository into a new directory.</li>
+                <li class="command-item"><strong>git add [file]</strong> - Add file contents to the index (staging area).</li>
+                <li class="command-item"><strong>git commit -m "[message]"</strong> - Record changes to the repository with a message.</li>
+                <li class="command-item"><strong>git status</strong> - Show the working tree status.</li>
+                <li class="command-item"><strong>git push</strong> - Update remote refs along with associated objects.</li>
+                <li class="command-item"><strong>git pull</strong> - Fetch from and integrate with another repository or a local branch.</li>
+                <li class="command-item"><strong>git branch</strong> - List, create, or delete branches.</li>
+                <li class="command-item"><strong>git checkout [branch]</strong> - Switch branches or restore working tree files.</li>
+            </ul>
+        </section>
+
+        <article class="introduction-article" role="article" aria-labelledby="introduction-heading">
+            <h2 class="section-heading" id="introduction-heading">Introduction to Git</h2>
+            <p class="section-text">Git is a distributed version control system that helps developers collaborate and manage code changes efficiently.</p>
+        </article>
+    </main>
     
+    <footer class="footer" role="contentinfo">
+        <p class="footer-text">&copy; 2023 Basic Git Guide. All rights reserved.</p>
+    </footer>
 </body>
 </html>
