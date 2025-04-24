@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navigation" role="navigation">
+    <button class="hamburger-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        ☰
+    </button>
+    <nav class="navigation" role="navigation" id="nav-menu">
         <ul class="nav-list">
             <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
@@ -18,20 +21,35 @@
         <h1 class="main-heading" id="home">Basic Git Commands</h1>  
         <section class="about-section" id="about-me" role="region" aria-labelledby="about-me-heading">
             <h2 class="section-heading" id="about-me-heading">About Me</h2>
+            <img src="https://placehold.co/150" alt="Placeholder image representing the author">
             <p class="section-text">Hello! I'm a developer passionate about version control systems and collaborative coding. I enjoy sharing knowledge and helping others learn Git.</p>
         </section>
 
         <section class="projects-section" id="projects" role="region" aria-labelledby="projects-heading">
             <h2 class="section-heading" id="projects-heading">Projects</h2>
+            <img src="https://placehold.co/600x150" alt="Placeholder image representing projects" class="projects-image">
             <ul class="projects-list">
-                <li class="project-item"><a class="project-link" href="https://github.com/example/project1" target="_blank">Project 1</a> - A tool for automating tasks.</li>
-                <li class="project-item"><a class="project-link" href="https://github.com/example/project2" target="_blank">Project 2</a> - A web application for tracking progress.</li>
-                <li class="project-item"><a class="project-link" href="https://github.com/example/project3" target="_blank">Project 3</a> - A library for data processing.</li>
+                <li class="project-item">
+                    <a class="project-link" href="https://github.com/example/project1" target="_blank">
+                        <img class="project-image" src="https://placehold.co/50" alt="Placeholder image for Project 1"> Project 1
+                    </a> - A tool for automating tasks.
+                </li>
+                <li class="project-item">
+                    <a class="project-link" href="https://github.com/example/project2" target="_blank">
+                        <img class="project-image" src="https://placehold.co/50" alt="Placeholder image for Project 2"> Project 2
+                    </a> - A web application for tracking progress.
+                </li>
+                <li class="project-item">
+                    <a class="project-link" href="https://github.com/example/project3" target="_blank">
+                        <img class="project-image" src="https://placehold.co/50" alt="Placeholder image for Project 3"> Project 3
+                    </a> - A library for data processing.
+                </li></a></li>
             </ul>
         </section>
 
         <section class="contact-section" id="contact" role="form" aria-labelledby="contact-heading">
             <h2 class="section-heading" id="contact-heading">Contact Me</h2>
+            <img src="https://placehold.co/150" alt="Placeholder image representing contact form">
             <form class="contact-form" action="https://example.com/submit-form" method="post">
                 <label class="form-label" for="name">Name:</label>
                 <input class="form-input" type="text" id="name" name="name" required>
@@ -48,6 +66,7 @@
 
         <section class="commands-section" role="region" aria-labelledby="commands-heading">
             <h1 class="section-heading" id="commands-heading">Basic Git Commands</h1>    
+            <img src="https://placehold.co/150" alt="Placeholder image representing Git commands">
             <ul class="commands-list">
                 <li class="command-item"><strong>git init</strong> - Initialize a new Git repository.</li>
                 <li class="command-item"><strong>git clone [url]</strong> - Clone a repository into a new directory.</li>
@@ -63,12 +82,14 @@
 
         <article class="introduction-article" role="article" aria-labelledby="introduction-heading">
             <h2 class="section-heading" id="introduction-heading">Introduction to Git</h2>
+            <img src="https://placehold.co/150" alt="Placeholder image representing Git introduction">
             <p class="section-text">Git is a distributed version control system that helps developers collaborate and manage code changes efficiently.</p>
         </article>
     </main>
     
     <footer class="footer" role="contentinfo">
-        <p class="footer-text">&copy; 2023 Basic Git Guide. All rights reserved.</p>
+        <p class="footer-text">&copy; 2025 Basic Git Guide. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
